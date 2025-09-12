@@ -1,0 +1,30 @@
+{
+  "name": "adapter-vercel",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "turbo build",
+    "format": "biome format --write",
+    "prepare": "husky",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "biome check",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "**/*": "biome format --write"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
